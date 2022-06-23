@@ -19,7 +19,7 @@ jobs:
         run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
 
       - name: Raise PR
-        uses: taiwrash/create-pull-request@v3
+        uses: g3-class/create-pull-request@v3
         with:
           branch: "auto-pr-branch"
           base: main
