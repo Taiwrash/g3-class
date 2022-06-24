@@ -1,5 +1,6 @@
 name: Demo to create automatic PR
 
+
 on:
   push:
     branches:
@@ -19,7 +20,7 @@ jobs:
         run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
 
       - name: Raise PR
-        uses: g3-class/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v3
         with:
           branch: "auto-pr-branch"
           base: main
